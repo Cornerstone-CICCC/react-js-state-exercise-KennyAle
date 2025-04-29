@@ -1,12 +1,11 @@
 type Props = {
   onClick: () => void;
+};
 
-}
-
-const ClickCounter = (props: Props) => {
+const ClickCounter = ({ onClick }: Props) => {
   return (
     <>
-      <button onClick={props.onClick}>Increment Counter</button>
+      <button onClick={onClick}>Increment Counter</button>
     </>
   );
 };

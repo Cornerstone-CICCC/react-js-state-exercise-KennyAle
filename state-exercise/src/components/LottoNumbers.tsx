@@ -2,10 +2,10 @@ type Props = {
   onClick: () => void;
 };
 
-const LottoNumbers = (props: Props) => {
+const LottoNumbers = ({ onClick }: Props) => {
   return (
     <>
-      <button onClick={props.onClick}>Generate Lotto Numbers</button>
+      <button onClick={onClick}>Generate Lotto Numbers</button>
     </>
   );
 };

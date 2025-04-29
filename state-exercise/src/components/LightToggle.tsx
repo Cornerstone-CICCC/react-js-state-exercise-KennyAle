@@ -1,11 +1,11 @@
 type Props = {
   onClick: () => void;
-}
+};
 
-const LightToggle = (props: Props) => {
+const LightToggle = ({ onClick }: Props) => {
   return (
     <>
-      <button onClick={props.onClick}>Toggle Lights</button>
+      <button onClick={onClick}>Toggle Lights</button>
     </>
   );
 };
